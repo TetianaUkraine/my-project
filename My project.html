@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+	
+</style>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My project</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+     <link rel="stylesheet" href="/resources/demos/style.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+ /* function getMySub(){
+  	alert ("Validation passed.");
+  }*/
+  </script>
+  <style type="text/css">
+  	label {
+  		float: left;
+  	} 
+  </style>
+</head>
+<body>
+	<form action="" method="post">
+		
+		<label for="firstname">Fistname* </label><br>
+		 <input type="text" name="firstname" id="firstname" placeholder="Your firstname" required=""><br>
+		<label for="lastname">Lastname* </label><br>
+		 <input type="text" name="lastname" id="lastname" placeholder="Your lastname" required=""><br>
+		<label for="datepicker">Birthday*  </label><br> 
+		<input type="" name="" id="datepicker" placeholder="Please select" required=""><br>
+		<label for="gender">Gender*  <input type="radio" name="Male-Female" checked="checked">Male</label>
+		        <input type="radio" id="gender" name="Male-Female">Female<br>
+        <label for="country">Country*  </label><br>
+          <select name="select" id="country">
+        	<option value="ct1">Ukraine</option>
+        	<option value="ct2">USA</option>
+        	<option value="ct3">German</option>
+        	<option value="ct4">France</option>
+        	<option value="ct5">Italy</option>
+        </select><br>
+        <label for="email">Email*   </label><br>  
+         <input type="email" id="email" name="email" placeholder="Your email" required="required"><br>
+        <label for="password">Password*   </label><br>
+        <input type="password" name="" id="password" placeholder="Your password" required ="required"></label><br>
+        <label for="address">Address* </label><br>  
+        <input type="text" name="" id="address" placeholder="Your address" required="required"></lable><br>
+        <label for="notes">Notes </label><br>
+        <textarea  id="notes"></textarea><br>
+
+		<button type="submit" name="send" onclick="getMySub()">Submit</button>
+	
+	</form>
+
+</body>
+</html>
